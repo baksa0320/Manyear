@@ -1,0 +1,130 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>Daum에디터 - 이미지 첨부</title> 
+<script src="../../js/popup.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="jquery.form.js"></script>
+<link rel="stylesheet" href="../../css/popup.css" type="text/css"></link>
+<style>
+  .thumb {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+</style>
+<script type="text/javascript">
+// <![CDATA[
+$(function(){
+        $("#saveBtn").click(function(){
+            $("#frm").submit();
+        })
+        $('#frm').ajaxForm({
+            beforeSubmit: function (data,form,option) {
+                //validation체크 
+                //막기위해서는 return false를 잡아주면됨
+                return true;
+            },
+            success: function(response,status){
+            	var temp = response.split("}{");
+            	for(var i = 0; i < temp.length; i++){
+            		if(temp.length == 1){
+            			done(temp[i]);
+            		} else if(i == 0){
+                		done(temp[i] + "}");
+            		} else if(i == temp.length - 1){
+                		done("{" + temp[i]);
+            		}else{
+                		done("{" + temp[i] + "}");
+            		}
+            	}
+                closeWindow();
+            },
+            error: function(){
+                alert("error!!");
+            }
+        });
+    })
+    function done(response) {
+        if (typeof(execAttach) == 'undefined') { //Virtual Function
+            return;
+        }
+        var response_object = $.parseJSON( response );
+        execAttach(response_object);
+    }
+ 
+    function initUploader(){
+        var _opener = PopupUtil.getOpener();
+        if (!_opener) {
+            alert('잘못된 경로로 접근하셨습니다.');
+            return;
+        }
+         
+        var _attacher = getAttacher('image', _opener);
+        registerAction(_attacher);
+    }
+	function closeWindow(){
+		self.close();
+	}
+// ]]>
+</script>
+</head>
+<body onload="initUploader();">
+<div class="wrapper">
+	<div class="header">
+		<h1>사진 첨부</h1>
+	</div>	
+	<div class="body">
+		<dl class="alert">
+		    <dt>사진 첨부 확인</dt>
+		    <dd>
+			    <form id="frm" name="frm" action="fileupload.jsp" method="post" enctype="multipart/form-data">
+					<input type="file" id="files" name="image_file" multiple /><br>
+					<output id="list"></output>
+	            </form>
+			</dd>
+		</dl>
+	</div>
+	<div class="footer">
+		<p><a href="#" onclick="closeWindow();" title="닫기" class="close">닫기</a></p>
+		<ul>
+			<li class="submit"><a href="#" id="saveBtn" title="등록" class="btnlink">등록</a> </li>
+			<li class="cancel"><a href="#" onclick="closeWindow();" title="취소" class="btnlink">취소</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+
+<script>
+
+  function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+    // Loop through the FileList and render image files as thumbnails.
+    for (var i = 0, f; f = files[i]; i++) {
+
+      // Only process image files.
+      if (!f.type.match('image.*')) {
+        continue;
+      }
+
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Render thumbnail.
+          var span = document.createElement('span');
+          span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                            '" title="', escape(theFile.name), '"/>'].join('');
+          document.getElementById('list').insertBefore(span, null);
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsDataURL(f);
+    }
+  }
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
+</html>

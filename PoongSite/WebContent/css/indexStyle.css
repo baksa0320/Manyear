@@ -1,0 +1,798 @@
+@CHARSET "UTF-8";
+
+@import url(https://fonts.googleapis.com/earlyaccess/hanna.css);
+
+/*----------------------------*/
+/* FOOTER */
+/*----------------------------*/
+
+.thank-text{
+	float:left;
+	text-align:center;
+	font-family: 'Pacifico', cursive;
+    font-size: 70px;
+	height:190px;
+	line-height:190px;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color:#B3B3B3;
+	font-weight:400;
+	width:100%;
+}
+#main-container-footer{
+	float:left;
+	width:100%;
+	height:200px;
+	background-color:#F9F9F9;
+	border-top:solid #F1F1F1 1px;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);
+
+}
+
+#row-1f,#row-2f,#row-3f,#row-4f{
+	float:left;
+	width:calc(100% / 4);
+	height:auto;
+}
+
+.text-row-1f,.text-row-2f,.text-row-3f,.text-row-4f{
+	float:left;
+	text-align:left;
+	height:140%;
+	line-height:140%;
+	margin-left:20px;
+	width:80%;
+	text-align:left;
+	font-family: Helvetica, sans-serif;
+    font-size: 14px;
+	font-weight:400;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color:#A1A1A1;
+	margin-top:80px;
+}
+.text-row-1f,.text-row-2f,.text-row-3f{
+	margin-bottom:100px;
+}
+
+/*----------------------------*/
+/* COPYRIGHT PART IN BLACK DOWN*/
+/*----------------------------*/
+
+#wrapper-copyright{
+	float:left;
+	width:100%;
+	height:70px;
+	background-color:#2E2D30;
+}
+
+.copyright{
+	position:relative;
+	width:1200px;
+	left:50%;
+	margin-left:-600px;
+	height:100%;
+	top:0;
+}
+
+.copy-text{
+	float:left;
+	text-align:left;
+	font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+	height:70px;
+	line-height:70px;
+	cursor:pointer;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color:#000;
+	margin-left:15px;
+	font-weight:500;
+}
+
+.wrapper-navbouton{
+	position:absolute;
+	height:100%;
+	right:0;
+}
+
+.google,.facebook,.dribbble,.linkin{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	text-align:right;
+	font-family:'socialicoregular';
+    font-size: 44px;
+	height:70px;
+	line-height:70px;
+	float:right;
+	opacity:0.5;
+	cursor:pointer;
+	float:right;
+	color:#000;
+	opacity:1;
+}
+
+.dribbble,.facebook,.linkin,.google{padding-right:20px;}
+.dribbble,.facebook,.linkin{padding-right:12px;}
+
+.linkin:hover,.google:hover,.facebook:hover,.dribbble:hover{color:#CCC;transform: scale(1.2);}
+
+#wrapper-thank{
+	float:left;
+	width:100%;
+	height:190px;
+	background-color:#F2F2F2;
+	margin-top:40px;
+}
+/*----------------------------*/
+/* NEWSLETTER*/
+/*----------------------------*/
+
+#main_tip_newsletter{
+	float:left;
+	width:100%;
+	height:auto;
+	margin-top:20px;
+}
+
+#tip_newsletter_input
+{
+    font: 15px/1.6 Helvetica, sans-serif;
+	color: #CCC;
+	padding: 5px 5px 5px 46px;
+	width: 170px;
+	border:solid 2px #CCC;
+	border-radius: 5px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+    box-shadow: none; 
+	outline: 0;
+	background: url(img/icon-newsletter.svg) no-repeat 10px 9px;
+	margin-left:20px;
+	vertical-align:center;
+	font-weight:400;
+}
+
+
+
+/** 占쎈엘占쎈쐭 **/
+#id,#pwd{
+    font: 16px/1.6 Helvetica, sans-serif;
+	color: #686868;
+	width: 170px;
+	border:solid 1px #FFF;
+	border-radius: 5px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+    box-shadow: none; 
+	outline: 0;
+	float: right;
+	margin-right: 10px;
+	vertical-align:center;
+	background-color:#FFF;
+}
+
+#inform{
+    font: 16px/1.6 Helvetica, sans-serif;
+	color: #ffffff;
+	width: 250px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+    box-shadow: none; 
+	outline: 0;
+	float: right;
+	vertical-align:center;
+}
+#login,#logout {
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+	font-weight:600;
+	color:#FFF;
+	cursor: pointer;
+	width: 100px;
+	padding: 5px 10px;
+	border-radius:4px;
+	background-color:#74BDEC;
+	border:none;
+	cursor:pointer;
+	float: right;
+	margin-right: 10px;
+	vertical-align:center;
+	opacity:1;
+	 transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+}
+
+.header-object{
+	width: 500px;
+	margin: auto;
+	height: 50px;
+}
+
+input[type=radio] {
+	display:none;
+}
+
+input[type=radio] + label {
+	display:inline-block;
+	width: 100px;
+	margin-top:16px;
+	margin-right:15px;
+	opacity:1;
+	padding: 4px 12px;
+	margin-bottom: 0;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+	background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+	background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #ccc;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	border-bottom-color: #b3b3b3;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+
+input[type=radio].type + label{
+	float: right;
+}
+input[type=radio]:checked + label {
+	background-image: none;
+	font-family: Helvetica, sans-serif;
+	outline: 0;
+	-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+	background-color:#e0e0e0;
+}
+
+/** 占쎌냳占쎌넅筌롳옙 **/
+
+#twitch_embed{
+	width: 84%;
+	height: 90%;
+}
+#chat_embed{
+	width: 15%;
+	height: 90%;
+}
+
+#writeable{
+	width: 80%;
+	margin: auto;
+	display: none;
+}
+
+
+
+/** 癰귣챶揆 **/
+
+#contents{
+	width: 60%;
+	margin: auto;
+	display: none;
+}
+
+#listBoard {
+    float:left;
+	width:100%;
+    height:auto;
+    line-height:auto;
+    position: relative;
+    padding: 0 !important;
+    margin: 4px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+	-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+	background-color:#fff;
+}
+
+#listBoard.header{
+	background-color:#EAEAEA;
+}
+
+.board-table{
+	width: 60%;
+	margin: auto;
+}
+#boardList .contents{
+	cursor: pointer;
+}
+.btn-blue {
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+	font-weight:600;
+	color:#FFF;
+	cursor: pointer;
+	width: 150px;
+	height: 40px;
+	padding: 5px 10px;
+	border-radius:4px;
+	background-color:#74BDEC;
+	border:none;
+	float:right;
+	margin-top:16px;
+	margin-right:15px;
+	cursor:pointer;
+	opacity:1;
+	 transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+}
+.btn-gray {
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+	font-weight:600;
+	color:#FFF;
+	cursor: pointer;
+	width: 80px;
+	height: 30px;
+	padding: 5px 10px;
+	border-radius:4px;
+	background-color:#848484;
+	border:none;
+	float:right;
+	margin-top:16px;
+	margin-right:15px;
+	cursor:pointer;
+	opacity:1;
+	 transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+}
+
+/** 野껊슣�뻻疫뀐옙 占쎈엘占쎈쐭 **/
+.part-info-list-num{
+	float:left;
+	text-align:center;
+	width: 5%;
+	line-height:44px;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	color:#000;
+	height:44px;
+	display: block;
+}
+.part-info-list-title{
+	float:left;
+	text-align:center;
+	line-height:44px;
+	font-family: 'Hanna';
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	color:#000;
+	margin-left:10px;
+	height:44px;
+}
+.part-info-list-nick{
+	float:right;
+	text-align:left;
+	width: 15%;
+	line-height:44px;
+	font-family: 'Hanna';
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	color:#828282;
+	height:44px;
+}
+.part-info-list-dates{
+	float:right;
+	text-align:center;
+	width: 10%;
+	line-height:44px;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	color:#000;
+	height:44px;
+	display: block;
+}
+.part-info-list-hits{
+	float:right;
+	text-align:center;
+	width: 5%;
+	line-height:44px;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	color:#000;
+	height:44px;
+	display: block;
+}
+
+.content-title{
+	float:left;
+	text-align:center;
+	line-height:44px;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    font-weight: bold;
+	color:#000;
+	margin-left:30px;
+	height:44px;
+}
+.content-nick{
+	float:left;
+	text-align:center;
+	line-height:44px;
+	font-family: 'Hanna', serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	color:#000;
+	margin-left:30px;
+	height:44px;
+}
+.content-dates{
+	float:right;
+	text-align:center;
+	width: 20%;
+	line-height:44px;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	color:#000;
+	margin-left:30px;
+	height:44px;
+}
+.content-hits{
+	float:left;
+	text-align:center;
+	width: 10%;
+	line-height:44px;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	color:#000;
+	margin-left:30px;
+	height:44px;
+}
+.content-commSize{
+	float:left;
+	text-align:center;
+	width: 10%;
+	line-height:44px;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    display: block;
+	color:#000;
+	height:44px;
+}
+.boardnum ul li {
+	position:relative;
+	display:inline-block;
+}
+.boardnum ul li a {
+	display:block;
+	margin:0 0 0 -3px;
+	padding:30px 20px;
+	font-weight:900;
+	line-height:20px;
+	font-size:13px;
+	color:#666;
+	transition: all 0.3s ease-in-out; 
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.boardnum li:hover a,
+.boardnum li.active a {
+	color:#333;
+}
+.boardnum ul li a {padding-left:15px; padding-right:15px;}
+
+/** 占쎈솊疫뀐옙 **/
+
+.post-reply,.post-reply-2{
+	float:left;
+	width:100%;
+    height:auto;
+    margin-top:10px;
+    background-color: #F6F6F6;
+}
+
+.image-reply-post,.image-reply-post-2{
+	float:left;
+	width:65px;
+	height:65px;
+	background: url(img/avatar.png) no-repeat;
+	top:0;	
+}
+
+.image-reply-post{background: url(img/avatar.png) no-repeat;}
+.image-reply-post-2{background: url(img/avatar-2.png) no-repeat;}
+
+.name-reply-post{
+	float:left;
+	width: 15%;
+	margin-left: 5%;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+	font-weight:600;
+	color:#000;
+	line-height:32px;
+	height:32px;
+}
+
+.text-reply-post{
+	float:left;
+	width: 50%;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 10x;
+    font-size: 12px;
+	font-weight:400;
+	color:#000;
+	border-bottom:solid #E9E9E9 1px;
+	line-height:32px;
+	height:32px;
+}
+
+.ip-reply-post{
+	float:right;
+	width: 5%;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+	font-weight:600;
+	color:#BDBDBD;
+	line-height:32px;
+	height:32px;
+}
+.dates-reply-post{
+	float:right;
+	width: 20%;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+	font-weight:600;
+	color:#686868;
+	line-height:32px;
+	height:32px;
+}
+.delete-reply-post{
+	float:right;
+	width: 5%;
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+	font-weight:600;
+	color:#686868;
+	line-height:32px;
+	height:32px;
+	cursor: pointer;
+}
+
+.post-send {
+	float:left;
+	width:100%;
+	height:auto;
+	margin-bottom:25px;
+}
+#commMsg {
+	width: 40%;
+	float: left;
+}
+#commBtn  {
+	float: left;
+	width: width: 100px;
+	margin-top: 0;
+}
+/** 疫뀐옙占쎈쾺疫뀐옙 **/
+
+#savebutton,#list {
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+	font-weight:600;
+	color:#FFF;
+	cursor: pointer;
+	width: 150px;
+	height: 40px;
+	padding: 5px 10px;
+	border-radius:4px;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out; /** Chrome & Safari **/
+	-moz-transition: all 0.5s ease-in-out; /** Firefox **/
+	-o-transition: all 0.5s ease-in-out; /** Opera **/
+	background-color:#74BDEC;
+	float:left;
+	border:none;
+}
+
+#nick,#password,#title {
+  display: block;
+  height: 28px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+/** 占쎌읈�꽴臾볥솇 占쎌겫占쎄맒 **/
+
+.videoStatus {
+	text-align:center;
+	font-size: 13pt;
+}
+
+.divVideo {
+	height: 480px;
+	margin: auto;
+	text-align: center;
+	font-size: 15pt;
+	font-family: 'Hanna', serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 150px;
+}
+
+#vol-control{
+	background: url('https://iviewsource.com/exercises/audioslider/images/volume-empty.png') no-repeat left top;
+}
+
+/** 占쎌돳占쎌뜚揶쏉옙占쎌뿯 **/
+
+
+#registerForm{
+	width: 40%;
+	margin: auto;
+}
+
+/** 野껊슣�뻻占쎈솇 占쎌뵠�뵳占� **/
+#tableName{
+	width: 180px;
+	height: auto;
+	margin: auto;
+	font-size: 30px;
+	font-family: 'Hanna';
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.board-table{width: 70%;}
+	.part-info-list-num{width: 5%; font-size: 12pt;}
+	.part-info-list-title{width: 50%; clear: right;}
+	.part-info-list-hits{width: 5%; font-size: 12pt;}
+	.part-info-list-dates{width: 10%; font-size: 12pt;}
+	.part-info-list-nick{width: 20%; font-size: 12pt;}
+	.content-title{font-size: 12pt;}
+	.content-nick{font-size: 12pt;}
+	.content-dates{font-size: 12pt;}
+	.content-hits{width: 20%; font-size: 12pt;}
+	.content-commSize{font-size: 12pt;}
+	.name-reply-post{width:45%;font-size: 14pt;}
+	.dates-reply-post{width:35%;}
+	.delete-reply-post{width:10%;}
+	.text-reply-post{font-size: 12pt;}
+	#divVideo {width: 70%;}
+	#contents{width: 70%;}
+	#tableName{width: 180px;}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.board-table{width: 80%;}
+	.part-info-list-num{width: 5%; font-size: 10pt;}
+	.part-info-list-title{width: 50%; clear: right;}
+	.part-info-list-hits{width: 5%; font-size: 10pt;}
+	.part-info-list-dates{width: 10%; font-size: 10pt;}
+	.part-info-list-nick{width: 20%; font-size: 10pt;}
+	.content-title{font-size: 10pt;}
+	.content-nick{font-size: 10pt;}
+	.content-dates{font-size: 10pt;}
+	.content-hits{width: 20%; font-size: 10pt;}
+	.content-commSize{display: none;}
+	.name-reply-post{width:45%; font-size: 12pt;}
+	.dates-reply-post{width:35%;}
+	.delete-reply-post{width:10%;}
+	.text-reply-post{font-size: 10pt;}
+	#divVideo {width: 80%;}
+	#contents{width: 80%;}
+	#tableName{width: 180px;}
+}
+
+@media (max-width: 767px) {
+	.board-table{width: 90%;}
+	#twitch_embed{width: 100%; height: 80%;}
+	#chat_embed{width: 100%; height: 80%;}
+	.part-info-list-num{width: 5%; font-size: 8pt;}
+	.part-info-list-title{width: 50%; clear: right;}
+	.part-info-list-hits{width: 5%; font-size: 8pt;}
+	.part-info-list-dates{width: 10%; font-size: 8pt;}
+	.part-info-list-nick{width: 20%; font-size: 8pt;}
+	.content-title{font-size: 8pt;}
+	.content-nick{font-size: 8pt;}
+	.content-dates{font-size: 8pt;}
+	.content-hits{width: 20%; font-size: 8pt;}
+	.content-commSize{display: none;}
+	.name-reply-post{width:45%; font-size: 10pt;}
+	.dates-reply-post{width:35%;}
+	.delete-reply-post{width:10%;}
+	.text-reply-post{font-size: 8pt;}
+	#divVideo {width: 90%;}
+	#contents{width: 90%;}
+	#tableName{width: 180px;}
+}
+@media (max-width: 479px) {
+	.board-table{width: 90%;}
+	#twitch_embed{width: 100%; height: 80%;}
+	#chat_embed{width: 100%; height: 80%;}
+	.part-info-list-num{display: none;}
+	.part-info-list-title{width: 45%; clear: right;}
+	.part-info-list-hits{width: 10%; font-size: 8pt;}
+	.part-info-list-dates{width: 10%; font-size: 8pt;}
+	.part-info-list-nick{width: 25%; font-size: 8pt;}
+	.content-title{font-size: 8pt;}
+	.content-nick{font-size: 8pt;}
+	.content-dates{font-size: 8pt;}
+	.content-hits{width: 20%; font-size: 8pt;}
+	.content-commSize{display: none;}
+	.name-reply-post{width:45%; font-size: 10pt;}
+	.dates-reply-post{width:35%;}
+	.delete-reply-post{width:10%;}
+	.text-reply-post{font-size: 8pt;}
+	#divVideo {width: 100%;}
+	#contents{width: 90%;}
+	#commMsg {width: 90%;}
+	.btn-blue  {width: 80px;}
+	#registerForm{width: 90%;}
+	#tableName{width: 180px;}
+	.name-reply-post{}
+}
